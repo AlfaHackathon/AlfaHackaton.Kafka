@@ -8,7 +8,7 @@
 
     <PropertyGroup>
         <PackageId>AlfaHackaton.Kafka</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.1.0</Version>
         <Authors>AlfaHackathon</Authors>
         <Description>Пакет для работы с Kafka</Description>
         <IsPackable>true</IsPackable>

@@ -25,11 +25,11 @@ public class KafkaProducer<TMessage> : IKafkaProducer<TMessage>
         topic = kafkaSettings.Value.Topic;
     }
 
-    public async Task ProduceAsync(TMessage message, CancellationToken cancellationToken)
+    public async Task ProduceAsync(string key, TMessage message, CancellationToken cancellationToken)
     {
         await producer.ProduceAsync(topic, new Message<string, TMessage>()
         {
-            Key = "uniq1",
+            Key = key,
             Value = message
         }, cancellationToken);
     }
